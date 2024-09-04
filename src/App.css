@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#root {
+  background: black;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calc-container {
+  background: #677a90;
+  width: 80%;
+  min-width: 700px;
+  max-width: 900px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.calc-container > div {
+  width: 23%;
+  height: 90%;
+  border: 2px solid #1a3359;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px 10px;
+}
+
+.miscrit {
+  background: #42556a;
+}
+
+.card-number {
+  color: #b6c8e1;
+  font-size: 1.5rem;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
+
+.miscrit > button {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.white-stat {
+  color: white;
+}
+
+.red-stat {
+  color: red;
+}
+
+.green-stat {
+  color: lime;
+}
+
+.miscrit-rating-legend {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.Splus, .S{
+  color: orange;
+}
+
+.Aplus, .A {
+  color: red;
+}
+
+.Bplus, .B {
+  color: lime;
+}
+
+.Cplus, .C {
+  color: magenta;
+}
+
+.Dplus, .D {
+  color: yellow;
+}
+
+.Fminus, .Fplus, .F {
+  color: gray;
+}
+
+.result-container {
+  background: #b6c8e1;
+}
+
+.result-title {
+  color: #42556a;
+  font-size: 1.4rem;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+}
+
+.rating-possibilities-container {
+  margin-top: 10px;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.prob-high{
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.prob-mid {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.prob-midlow {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+@media (width < 985px) {
+  .result-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (width < 700px) {
+  .calc-container {
+    text-align: center;
+    flex-wrap: wrap;
+    min-width: 300px;
+    width: auto;
+    height: auto;
+    row-gap: 10px;
+    margin: 10px;
+  }
+
+  .calc-container > div {
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .result-container {
+    margin-top: 0 !important;
+    width: 90% !important;
+  }
+
+  .rating-possibilities-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    text-align: start;
+  }
+}
