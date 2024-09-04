@@ -78,10 +78,31 @@ function App() {
     return fusionRatingProbabilities;
   }
 
+  function changeAll(miscrit) {
+    const stats0 = {hp:0, sp:0, ea:0, ed:0, pa:0, pd:0}
+    const stats1 = {hp:1, sp:1, ea:1, ed:1, pa:1, pd:1}
+    const stats2 = {hp:2, sp:2, ea:2, ed:2, pa:2, pd:2}
+
+    if (miscrit == 1) {
+      if (miscritOne.hp == 0) setMiscritOne({...stats1})
+      else if (miscritOne.hp == 1) setMiscritOne({...stats2})
+      else if (miscritOne.hp == 2) setMiscritOne({...stats0})
+    } else if (miscrit == 2) {
+      if (miscritTwo.hp == 0) setMiscritTwo({...stats1})
+      else if (miscritTwo.hp == 1) setMiscritTwo({...stats2})
+      else if (miscritTwo.hp == 2) setMiscritTwo({...stats0})
+    } else if (miscrit == 3) {
+      if (miscritThree.hp == 0) setMiscritThree({...stats1})
+      else if (miscritThree.hp == 1) setMiscritThree({...stats2})
+      else if (miscritThree.hp == 2) setMiscritThree({...stats0})
+    }
+  }
+
   return (
       <div className='calc-container'>
         <div className='miscrit miscrit-one'>
           <p className='card-number'>1</p>
+          <button className='change-all-btn' onClick={() => changeAll(1)}>⟳</button>
           <button className={miscritOne.hp == 0 ? "red-stat" : miscritOne.hp == 1 ? "white-stat" : "green-stat"} onClick={(x) => handleStats(1,x)}>HP</button>
           <button className={miscritOne.sp == 0 ? "red-stat" : miscritOne.sp == 1 ? "white-stat" : "green-stat"} onClick={(x) => handleStats(1,x)}>SP</button>
           <button className={miscritOne.ea == 0 ? "red-stat" : miscritOne.ea == 1 ? "white-stat" : "green-stat"} onClick={(x) => handleStats(1,x)}>EA</button>
@@ -92,6 +113,7 @@ function App() {
         </div>
         <div className='miscrit miscrit-two'>
           <p className='card-number'>2</p>
+          <button className='change-all-btn' onClick={() => changeAll(2)}>⟳</button>
           <button className={miscritTwo.hp == 0 ? "red-stat" : miscritTwo.hp == 1 ? "white-stat" : "green-stat"} onClick={(x) => handleStats(2,x)}>HP</button>
           <button className={miscritTwo.sp == 0 ? "red-stat" : miscritTwo.sp == 1 ? "white-stat" : "green-stat"} onClick={(x) => handleStats(2,x)}>SP</button>
           <button className={miscritTwo.ea == 0 ? "red-stat" : miscritTwo.ea == 1 ? "white-stat" : "green-stat"} onClick={(x) => handleStats(2,x)}>EA</button>
@@ -102,6 +124,7 @@ function App() {
         </div>
         <div className='miscrit miscrit-three'>
           <p className='card-number'>3</p>
+          <button className='change-all-btn' onClick={() => changeAll(3)}>⟳</button>
           <button className={miscritThree.hp == 0 ? "red-stat" : miscritThree.hp == 1 ? "white-stat" : "green-stat"} onClick={(x) => handleStats(3,x)}>HP</button>
           <button className={miscritThree.sp == 0 ? "red-stat" : miscritThree.sp == 1 ? "white-stat" : "green-stat"} onClick={(x) => handleStats(3,x)}>SP</button>
           <button className={miscritThree.ea == 0 ? "red-stat" : miscritThree.ea == 1 ? "white-stat" : "green-stat"} onClick={(x) => handleStats(3,x)}>EA</button>
