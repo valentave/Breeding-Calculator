@@ -113,19 +113,19 @@ function App() {
         <div className='result-container'>
           <p className='result-title'>Possible Results</p>
           <div className='rating-possibilities-container'>
-            <p>S+: <span className={probabilities.splus > 0.4 ? "prob-high" : probabilities.splus > 0.3 ? "prob-mid" : probabilities.splus > 0.2 ? "prob-midlow" : ""}>{(probabilities.splus*100).toFixed(0)}%</span></p>
-            <p>S: <span className={probabilities.s > 0.4 ? "prob-high" : probabilities.s > 0.3 ? "prob-mid" : probabilities.s > 0.2 ? "prob-midlow" : ""}>{(probabilities.s*100).toFixed(0)}%</span></p>
-            <p>A+: <span className={probabilities.aplus > 0.4 ? "prob-high" : probabilities.aplus > 0.3 ? "prob-mid" : probabilities.aplus > 0.2 ? "prob-midlow" : ""}>{(probabilities.aplus*100).toFixed(0)}%</span></p>
-            <p>A: <span className={probabilities.a > 0.4 ? "prob-high" : probabilities.a > 0.3 ? "prob-mid" : probabilities.a > 0.2 ? "prob-midlow" : ""}>{(probabilities.a*100).toFixed(0)}%</span></p>
-            <p>B+: <span className={probabilities.bplus > 0.4 ? "prob-high" : probabilities.bplus > 0.3 ? "prob-mid" : probabilities.bplus > 0.2 ? "prob-midlow" : ""}>{(probabilities.bplus*100).toFixed(0)}%</span></p>
-            <p>B: <span className={probabilities.b > 0.4 ? "prob-high" : probabilities.b > 0.3 ? "prob-mid" : probabilities.b > 0.2 ? "prob-midlow" : ""}>{(probabilities.b*100).toFixed(0)}%</span></p>
-            <p>C+: <span className={probabilities.cplus > 0.4 ? "prob-high" : probabilities.cplus > 0.3 ? "prob-mid" : probabilities.cplus > 0.2 ? "prob-midlow" : ""}>{(probabilities.cplus*100).toFixed(0)}%</span></p>
-            <p>C: <span className={probabilities.c > 0.4 ? "prob-high" : probabilities.c > 0.3 ? "prob-mid" : probabilities.c > 0.2 ? "prob-midlow" : ""}>{(probabilities.c*100).toFixed(0)}%</span></p>
-            <p>D+: <span className={probabilities.dplus > 0.4 ? "prob-high" : probabilities.dplus > 0.3 ? "prob-mid" : probabilities.dplus > 0.2 ? "prob-midlow" : ""}>{(probabilities.dplus*100).toFixed(0)}%</span></p>
-            <p>D: <span className={probabilities.d > 0.4 ? "prob-high" : probabilities.d > 0.3 ? "prob-mid" : probabilities.d > 0.2 ? "prob-midlow" : ""}>{(probabilities.d*100).toFixed(0)}%</span></p>
-            <p>F+: <span className={probabilities.fplus > 0.4 ? "prob-high" : probabilities.fplus > 0.3 ? "prob-mid" : probabilities.fplus > 0.2 ? "prob-midlow" : ""}>{(probabilities.fplus*100).toFixed(0)}%</span></p>
-            <p>F: <span className={probabilities.f > 0.4 ? "prob-high" : probabilities.f > 0.3 ? "prob-mid" : probabilities.f > 0.2 ? "prob-midlow" : ""}>{(probabilities.f*100).toFixed(0)}%</span></p>
-            <p>F-: <span className={probabilities.fminus > 0.4 ? "prob-high" : probabilities.fminus > 0.3 ? "prob-mid" : probabilities.fminus > 0.2 ? "prob-midlow" : ""}>{(probabilities.fminus*100).toFixed(0)}%</span></p>
+            <p>S+: <span className={probabilities.splus > 0.4 ? "prob-high" : probabilities.splus > 0.3 ? "prob-mid" : probabilities.splus > 0.2 ? "prob-midlow" : ""}>{(probabilities.splus*100).toFixed(1)}%</span></p>
+            <p>S: <span className={probabilities.s > 0.4 ? "prob-high" : probabilities.s > 0.3 ? "prob-mid" : probabilities.s > 0.2 ? "prob-midlow" : ""}>{(probabilities.s*100).toFixed(1)}%</span></p>
+            <p>A+: <span className={probabilities.aplus > 0.4 ? "prob-high" : probabilities.aplus > 0.3 ? "prob-mid" : probabilities.aplus > 0.2 ? "prob-midlow" : ""}>{(probabilities.aplus*100).toFixed(1)}%</span></p>
+            <p>A: <span className={probabilities.a > 0.4 ? "prob-high" : probabilities.a > 0.3 ? "prob-mid" : probabilities.a > 0.2 ? "prob-midlow" : ""}>{(probabilities.a*100).toFixed(1)}%</span></p>
+            <p>B+: <span className={probabilities.bplus > 0.4 ? "prob-high" : probabilities.bplus > 0.3 ? "prob-mid" : probabilities.bplus > 0.2 ? "prob-midlow" : ""}>{(probabilities.bplus*100).toFixed(1)}%</span></p>
+            <p>B: <span className={probabilities.b > 0.4 ? "prob-high" : probabilities.b > 0.3 ? "prob-mid" : probabilities.b > 0.2 ? "prob-midlow" : ""}>{(probabilities.b*100).toFixed(1)}%</span></p>
+            <p>C+: <span className={probabilities.cplus > 0.4 ? "prob-high" : probabilities.cplus > 0.3 ? "prob-mid" : probabilities.cplus > 0.2 ? "prob-midlow" : ""}>{(probabilities.cplus*100).toFixed(1)}%</span></p>
+            <p>C: <span className={probabilities.c > 0.4 ? "prob-high" : probabilities.c > 0.3 ? "prob-mid" : probabilities.c > 0.2 ? "prob-midlow" : ""}>{(probabilities.c*100).toFixed(1)}%</span></p>
+            <p>D+: <span className={probabilities.dplus > 0.4 ? "prob-high" : probabilities.dplus > 0.3 ? "prob-mid" : probabilities.dplus > 0.2 ? "prob-midlow" : ""}>{(probabilities.dplus*100).toFixed(1)}%</span></p>
+            <p>D: <span className={probabilities.d > 0.4 ? "prob-high" : probabilities.d > 0.3 ? "prob-mid" : probabilities.d > 0.2 ? "prob-midlow" : ""}>{(probabilities.d*100).toFixed(1)}%</span></p>
+            <p>F+: <span className={probabilities.fplus > 0.4 ? "prob-high" : probabilities.fplus > 0.3 ? "prob-mid" : probabilities.fplus > 0.2 ? "prob-midlow" : ""}>{(probabilities.fplus*100).toFixed(1)}%</span></p>
+            <p>F: <span className={probabilities.f > 0.4 ? "prob-high" : probabilities.f > 0.3 ? "prob-mid" : probabilities.f > 0.2 ? "prob-midlow" : ""}>{(probabilities.f*100).toFixed(1)}%</span></p>
+            <p>F-: <span className={probabilities.fminus > 0.4 ? "prob-high" : probabilities.fminus > 0.3 ? "prob-mid" : probabilities.fminus > 0.2 ? "prob-midlow" : ""}>{(probabilities.fminus*100).toFixed(1)}%</span></p>
           </div>
         </div>
       </div>

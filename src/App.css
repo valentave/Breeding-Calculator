@@ -30,7 +30,7 @@ body {
   background: #677a90;
   width: 80%;
   min-width: 700px;
-  max-width: 900px;
+  max-width: 1000px;
   height: 300px;
   display: flex;
   flex-direction: row;
@@ -40,7 +40,7 @@ body {
 }
 
 .calc-container > div {
-  width: 23%;
+  width: 24%;
   height: 90%;
   border: 2px solid #1a3359;
   border-radius: 10px;
@@ -136,27 +136,21 @@ body {
 }
 
 .prob-high{
-  font-weight: 700;
-  font-size: 1.3rem;
+  font-weight: 900;
+  color: red;
 }
 
 .prob-mid {
   font-weight: 700;
-  font-size: 1.2rem;
+  color: yellow;
 }
 
 .prob-midlow {
   font-weight: 500;
-  font-size: 1.1rem;
+  color: greenyellow;
 }
 
-@media (width < 985px) {
-  .result-title {
-    font-size: 1.2rem;
-  }
-}
-
-@media (width < 700px) {
+@media (width < 987px) {
   .calc-container {
     text-align: center;
     flex-wrap: wrap;
