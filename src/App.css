@@ -115,8 +115,13 @@ body {
   font-weight: 900;
 }
 
-.Fminus, .Fplus, .F {
+.Fplus, .F {
   color: gray;
+  font-weight: 900;
+}
+
+.Fminus {
+  color: #222;
   font-weight: 900;
 }
 
@@ -188,7 +193,7 @@ body {
 
 .prob-0 {
   font-weight: 100 !important;
-  color: white;
+  color: transparent;
 }
 
 @media (width < 987px) {
