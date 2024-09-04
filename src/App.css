@@ -92,34 +92,40 @@ body {
 
 .Splus, .S{
   color: orange;
+  font-weight: 900;
 }
 
 .Aplus, .A {
   color: red;
+  font-weight: 900;
 }
 
 .Bplus, .B {
   color: lime;
+  font-weight: 900;
 }
 
 .Cplus, .C {
   color: magenta;
+  font-weight: 900;
 }
 
 .Dplus, .D {
   color: yellow;
+  font-weight: 900;
 }
 
 .Fminus, .Fplus, .F {
   color: gray;
+  font-weight: 900;
 }
 
 .result-container {
-  background: #b6c8e1;
+  background: #42556a;
 }
 
 .result-title {
-  color: #42556a;
+  color: white;
   font-size: 1.4rem;
   font-weight: 900;
   position: absolute;
@@ -135,19 +141,54 @@ body {
   align-items: center;
 }
 
-.prob-high{
+.rating-possibilities-container span {
+}
+
+.prob-100{
   font-weight: 900;
   color: red;
+  text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000,
+               1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
 
-.prob-mid {
+.prob-60 {
+  font-weight: 900;
+  color: orange;
+  text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000,
+               1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+.prob-40 {
   font-weight: 700;
   color: yellow;
+  text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000,
+               1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
 }
 
-.prob-midlow {
+.prob-20 {
+  font-weight: 700;
+  color: lightgreen;
+  text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000,
+               1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+.prob-10 {
+  font-weight: 700;
+  color: lightblue;
+  text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000,
+               1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+.prob-1 {
   font-weight: 500;
-  color: greenyellow;
+  color: gray;
+  text-shadow: 1px 0 #000, -1px 0 #000, 0 1px #000, 0 -1px #000,
+               1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+.prob-0 {
+  font-weight: 100 !important;
+  color: white;
 }
 
 @media (width < 987px) {
@@ -173,7 +214,7 @@ body {
   }
 
   .rating-possibilities-container {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: start;
   }
 }
