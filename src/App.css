@@ -131,10 +131,12 @@ body {
 
 .result-title {
   color: white;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 900;
   position: absolute;
   top: 0;
+  grid-column: 1 / span 2;
+  justify-self: center;
 }
 
 .rating-possibilities-container {
@@ -210,6 +212,33 @@ body {
   color: transparent;
 }
 
+.result-filter {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr;
+}
+
+.filter-result-text {
+  color: white;
+  grid-column: 1 / span 2;
+  font-weight: 900;
+  text-align: center;
+  align-self: end;
+}
+
+.result-container > .change-all-btn,
+.result-filter > .change-all-btn {
+  background: black !important;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  font-weight: 900;
+}
+
+.filter-result-text > .prob-0 {
+  color: black !important;
+  font-weight: 900 !important;
+}
+
 @media (width < 987px) {
   .calc-container {
     text-align: center;
@@ -227,9 +256,10 @@ body {
     margin-bottom: 20px;
   }
 
-  .result-container {
+  .result-container,
+  .result-filter {
     margin-top: 0 !important;
-    width: 90% !important;
+    width: 95% !important;
   }
 
   .rating-possibilities-container {
